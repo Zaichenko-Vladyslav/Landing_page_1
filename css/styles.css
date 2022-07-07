@@ -1,0 +1,814 @@
+html, body {
+    height: 100%;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.box::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.box {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.btn {
+    transition: all 0.3s ease-in-out;
+}
+
+@media(max-width: 768px) {
+
+    #header {
+        text-align: center;
+    }
+
+    #about {
+        text-align: center;
+    }
+
+    #marathon {
+        text-align: center;
+    }
+}
+
+.navbar {
+    margin-top: 20px;
+    background-color: #E4F74D !important;
+    color: black;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+  
+.navbar .nav .nav-item .nav-link {
+    color: black;
+    font-size: 18px;
+}
+  
+.navbar .nav .nav-item .nav-link:hover {
+    color: white;
+}
+  
+.navbar-toggler {
+    color: black;
+}
+
+/* HEADER */
+
+#header {
+    background: url('../img/slide_1.png') center center no-repeat;
+    background-size: cover;
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header-content-container {
+    padding-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.header-title {
+    color: #30394A;
+    font-family: 'Goldman';
+    font-style: normal;
+    font-size: 90px;
+    text-align: center;
+    border: 10px solid rgb(48, 57, 74, 0.25);
+    margin-left: -70px;
+}
+
+.header-subtitle {
+    color: #30394A;
+    font-family: 'Gowun Batang', serif;
+    font-size: 60px;
+}
+
+.list-inline {
+    margin-left: 40px;
+}
+
+.list-inline-item img {
+    max-height: 50px;
+    margin: 15px;
+}
+
+@media(max-width: 1300px) {
+
+    .header-title {
+        font-size: 80px;
+        margin-left: 0px;
+    }
+
+    .header-subtitle {
+        font-size: 50px;
+        margin-left: 80px;
+    }
+
+    .list-inline {
+        margin-left: 120px;
+    }
+}
+
+@media(max-width: 1199px) {
+
+    .header-content-container {
+        text-align: center;
+    }
+
+    .header-title {
+        font-size: 65px;
+        margin-left: 0px;
+    }
+
+    .header-subtitle {
+        margin-left: 0px;
+    }
+
+    .list-inline {
+        margin-left: 0px;
+    }
+}
+
+@media(max-width: 991px) {
+
+    .header-title {
+        font-size: 90px;
+        color: white;
+    }
+
+    .header-subtitle {
+        font-size: 60px;
+        color: white;
+    }
+}
+
+@media(max-width: 767px) {
+
+    .header-title {
+        font-size: 70px;
+        margin-left: 0px;
+        color: white;
+    }
+
+    .header-subtitle {
+        font-size: 50px;
+        margin-left: 0px;
+        color: white;
+    }
+
+    .list-inline {
+        margin-left: 0px;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    .header-title {
+        font-size: 13vw;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .header-subtitle {
+        font-size: 10vw;
+    }
+
+    .list-inline-item img {
+        max-height: 45px;
+    }
+
+}
+
+/* ABOUT */
+
+#about {
+    padding: 5rem 0;
+    background-color:#f6f6f6;
+}
+
+#about .container .row {
+    display: flex;
+    justify-content: center;
+}
+
+#about .container .col-md-6 {
+    align-self: center;
+}
+
+.about-text-container {
+    background-color: #E4F74D;
+    overflow-y: scroll;
+    padding: 10px;
+    height: 100%;
+    margin: auto;
+}
+
+.about-text-title {
+    font-family: 'Kantumruy Pro', sans-serif;
+    color: #2F3D5F;
+    margin: 20px;
+    text-align: center;
+    font-size: 2.5vw;
+}
+
+.about-text-content {
+    font-family: 'Kantumruy Pro', sans-serif;
+    color: #2F3D5F;
+    margin: 20px;
+    text-align: justify;
+    font-size: 1.5vw;
+}
+
+@media(max-width: 767px) {
+
+    #about {
+        padding: 2.5rem 0;
+    }
+
+    .about-text-container {
+        margin-top: 2.5rem;
+    }
+
+    .about-text-title {
+        font-size: 4.5vw;
+    }
+    
+    .about-text-content {
+        font-size: 3vw;
+    }
+
+    #about .container .row {
+        display: block;
+    }
+
+    #about .container .row {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media(max-width: 500px) {
+
+    #about {
+        padding: 1rem 0;
+    }
+
+    .about-text-container {
+        margin-top: 1rem;
+    }
+
+    .about-text-title {
+        font-size: 6vw;
+    }
+    
+    .about-text-content {
+        font-size: 4vw;
+    }
+
+}
+
+/* ::-webkit-scrollbar {
+    width: 16px;
+    height: 40px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #30394A;
+    border-top: 30px #E4F74D solid;
+    border-right: 8px #E4F74D solid;
+    border-bottom: 30px #E4F74D solid;
+    background-clip: padding-box;
+} */
+
+/* MARATHON */
+
+#marathon {
+    padding: 5rem 0;
+    background-color: #f2f2f2;
+}
+
+#marathon .container .row {
+    display: flex;
+    justify-content: center;
+}
+
+#marathon .container .col-md-6 {
+    align-self: center;
+}
+
+.marathon-text-container {
+    background-color: #9DB8BD;
+    overflow-y: scroll;
+    position: relative;
+    padding: 10px;
+}
+
+.marathon-header-title {
+    color: white;
+    margin-left: 15%;
+    margin-right: 15%;
+    font-family: 'Goldman';
+    font-style: normal;
+    font-size: 3.5vw;
+    text-align: center;
+    border: 5px solid rgba(255, 255, 255, 0.25);
+}
+
+.marathon-subtitle {
+    color: #30394A;
+    font-family: 'Gowun Batang', serif;
+    font-size: 4vw;
+    text-align: center;
+    padding-right: 6vw;
+}
+
+.marathon-list-title {
+    font-family: 'Goldman';
+    font-style: normal;
+    color: white;
+    font-size: 1.4vw;
+    text-align: center;
+    padding-top: 5px;
+    padding-left: 4vw;
+}
+
+.inline-img {
+    width: 25%;
+}
+
+.inline-text {
+    width: 75%;
+}
+
+#marathon .marathon-items-list div.inline {
+    float: left;
+}
+
+#marathon .marathon-items-list div {
+    height: 8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#marathon .marathon-items-list div img {
+    width: 5vw;
+}
+
+#marathon .marathon-items-list div p {
+    width: 100%;
+    margin: auto;
+    margin-right: 5%;
+    font-size: 1.5vw;
+    text-align: left;
+    color: #253C57;
+}
+
+@media(max-width: 767px) {
+
+    #marathon {
+        padding: 2.5rem 0;
+    }
+
+    .marathon-text-container {
+        margin-top: 2.5rem;
+    }
+
+    .marathon-header-title {
+        font-size: 10vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .marathon-subtitle {
+        font-size: 7.5vw;
+        padding-right: 0vw;
+    }
+    
+    .marathon-list-title {
+        font-size: 3vw;
+        padding-top: 2.5px;
+        padding-bottom: 2.5px;
+        padding-left: auto;
+        padding-right: auto;
+    }
+
+    .inline-img {
+        width: 20%;
+    }
+    
+    .inline-text {
+        width: 80%;
+    }
+
+    #marathon .marathon-items-list div {
+        height: 14vw;
+    }
+    
+    #marathon .marathon-items-list div img {
+        width: 10vw;
+    }
+    
+    #marathon .marathon-items-list div p {
+        font-size: 3.25vw;
+    }
+
+    #marathon .container .row {
+        display: block;
+    }
+}
+
+@media(max-width: 500px) {
+
+    #marathon {
+        padding: 1rem 0;
+    }
+
+    .marathon-text-container {
+        margin-top: 1rem;
+    }
+
+    .marathon-header-title {
+        font-size: 10vw;
+    }
+
+    .marathon-subtitle {
+        font-size: 7.5vw;
+    }
+
+    .marathon-list-title {
+        font-size: 3.75vw;
+    }
+}
+
+/* ABOUT MARATHON */
+
+#about-marathon {
+    padding: 5rem 0;
+    color: #F2F2F2;
+}
+
+#about-marathon .container .row {
+    display: flex;
+    justify-content: center;
+}
+
+#about-marathon .container .col-md-6 {
+    align-self: center;
+}
+
+.about-marathon-text-container {
+    overflow-y: scroll;
+    position: relative;
+    padding: 10px;
+}
+
+.about-marathon-title {
+    color: #437708;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 3.5vw;
+    text-align: center;
+    padding-left: 15%;
+}
+
+#about-marathon .about-marathon-items-list div.inline {
+    float: left;
+}
+
+#about-marathon .about-marathon-items-list div {
+    padding-top: 20px;
+}
+
+#about-marathon .about-marathon-items-list div img {
+    width: 4vw;
+}
+
+#about-marathon .about-marathon-items-list div p {
+    width: 100%;
+    margin: auto;
+    font-size: 1.25vw;
+    text-align: justify;
+    color: #253C57;
+}
+
+@media(max-width: 767px) {
+
+    #about-marathon {
+        padding: 2.5rem 0;
+    }
+
+    .about-marathon-text-container {
+        margin-top: 2.5rem;
+    }
+
+    .about-marathon-title {
+        font-size: 7vw;
+    }
+
+    #about-marathon .about-marathon-items-list div img {
+        width: 9vw;
+    }
+
+    #about-marathon .about-marathon-items-list div p {
+        font-size: 3vw;
+        padding-right: 10px;
+    }
+
+    #about-marathon .container .row {
+        display: block;
+    }
+}
+
+@media(max-width: 500px) {
+
+    #about-marathon {
+        padding: 1rem 0;
+    }
+
+    .about-marathon-text-container {
+        margin-top: 1rem;
+    }
+
+    .about-marathon-title {
+        font-size: 9vw;
+        padding-right: 10px;
+    }
+
+    #about-marathon .about-marathon-items-list div img {
+        width: 7vw;
+    }
+
+    #about-marathon .about-marathon-items-list div p {
+        font-size: 3.5vw;
+        padding-right: 10px;
+    }
+}
+
+/* PROGRAM */
+
+#program {
+    padding: 2rem 0;
+    background-color: #f2f2f2;
+}
+
+.program-title {
+    color: #30394A;
+    font-family: 'Goldman';
+    font-style: normal;
+    font-size: 70px;
+    text-align: center;
+    border: 10px solid rgb(48, 57, 74, 0.25);
+}
+
+#program .card {
+    margin-top: 2rem;
+}
+
+#program .card-img-top {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#program .program-img .img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    z-index: 0;
+    transition:all 0.3s ease-in-out;
+}
+
+#program .program-img .img-overlay:hover {
+    opacity: 1;
+    z-index: 1;
+}
+
+.card-header {
+    align-self: center;
+    justify-self: center;
+    width: 100%;
+    color: #253C57;
+    background-color: white;
+}
+
+.card-header p {
+    text-align: center;
+    font-size: 2.5vw;
+    margin: auto;
+}
+
+#program .btn-program {
+    background-color: #9DB8BD;
+    border: 1px solid #9DB8BD;
+    color: #30394A;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 75%;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5vw;
+}
+
+.text-p-left {
+    text-align: left;
+}
+
+@media(max-width: 767px) {
+
+    .program-title {
+        font-size: 10vw;
+    }
+
+    .card-header p {
+        font-size: 6.5vw;
+    }
+
+    #program .btn-program {
+        font-size: 3.5vw;
+    }
+}
+
+#program .btn-program:hover {
+    background-color: #E4F74D;
+    border: 1px solid #E4F74D;
+    color: #30394A;
+}
+
+.card-block {
+    color: black;
+    background-color: #E4F74D;
+}
+
+.card-button-close {
+    text-align: right;
+    margin-top: -5px;
+    margin-right: -5px;
+    margin-bottom: 10px;
+}
+
+.card-block .btn {
+    padding: 0;
+    border: none;
+    background: none;
+    border-radius: 35px;
+}
+
+.card-block .btn:hover {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.card-block .btn img {
+    width: 35px;
+    height: 35px;
+}
+
+/* PAYMENT */
+
+#payment {
+    background: url('../img/slide_5.png') center center no-repeat;
+    background-size: cover;
+    height: 98%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#payment div.inline {
+    float: left;
+}
+
+#payment .pay-by-card {
+    color: black;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 40px;
+    width: 450px;
+}
+
+#payment .pay-by-card div {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#payment .pay-by-card div h3 {
+    font-size: 35px;
+    margin: auto;
+    padding-left: 20px;
+}
+
+#payment .pay-by-card div img {
+    margin-left: -20px;
+    height: 100px;
+}
+
+#payment .buy-here {
+    margin-top: 10px;
+    background-color: #E4F74D;
+    color: black;
+    height: 100px;
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#payment .buy-here h1 {
+    color: #253C57;
+    text-align: center;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    font-size: 50px;
+    margin: auto;
+}
+
+#payment .mono-link-big {
+    margin-top: 10px;
+    height: 100px;
+    width: 450px;
+}
+
+#payment .mono-link-big img {
+    height: 100px;
+}
+
+@media(max-width: 480px) {
+
+    #payment .pay-by-card {
+        width: 110%;
+        margin-left: -5%;
+    }
+
+    #payment .pay-by-card div h3 {
+        font-size: 6vw;
+    }
+
+    #payment .pay-by-card div img {
+        height: 19vw;
+    }
+
+    #payment .buy-here {
+        width: 100%;
+        height: 80px;
+    }
+
+    #payment .buy-here h1 {
+        font-size: 8vw;
+    }
+
+    #payment .mono-link-big {
+        width: 100%;
+    }
+
+    #payment .mono-link-big img {
+        height: 19vw;
+    }
+}
+
+/* BUTTON UP! */
+
+.button-up {
+    width: 45px;
+    height: 45px;
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    background-color: #30394A;
+    text-align: center;
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: 5;
+}
+
+.button-up:hover {
+    opacity: 1;
+}
+
+footer .fa {
+    color: white;
+    font-size: 45px;
+    color: #E4F74D;
+    padding: 0%;
+    margin: 0%;
+}
+
+/* BOTTOM */
+
+#buttom-space {
+    height: 20px;
+    background-color: #E4F74D !important;
+}
