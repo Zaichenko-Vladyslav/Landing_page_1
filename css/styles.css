@@ -183,6 +183,27 @@ html, body {
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ABOUT */
 
 #about {
@@ -201,10 +222,12 @@ html, body {
 
 .about-text-container {
     background-color: #E4F74D;
-    overflow-y: scroll;
     padding: 10px;
     height: 100%;
     margin: auto;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .about-text-title {
@@ -303,9 +326,11 @@ html, body {
 
 .marathon-text-container {
     background-color: #9DB8BD;
-    overflow-y: scroll;
     position: relative;
     padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .marathon-header-title {
@@ -464,9 +489,11 @@ html, body {
 }
 
 .about-marathon-text-container {
-    overflow-y: scroll;
     position: relative;
     padding: 10px;
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .about-marathon-title {
@@ -549,6 +576,21 @@ html, body {
         padding-right: 10px;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* PROGRAM */
 
