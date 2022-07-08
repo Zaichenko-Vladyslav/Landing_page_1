@@ -162,7 +162,6 @@ html, body {
     .list-inline {
         margin-left: 0px;
     }
-
 }
 
 @media(max-width: 500px) {
@@ -180,29 +179,7 @@ html, body {
     .list-inline-item img {
         max-height: 45px;
     }
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ABOUT */
 
@@ -235,7 +212,7 @@ html, body {
     color: #2F3D5F;
     margin: 20px;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 35px;
 }
 
 .about-text-content {
@@ -243,7 +220,18 @@ html, body {
     color: #2F3D5F;
     margin: 20px;
     text-align: justify;
-    font-size: 1.5vw;
+    font-size: 22px;
+}
+
+@media(max-width: 1400px) {
+
+    .about-text-title {
+        font-size: 2.5vw;
+    }
+    
+    .about-text-content {
+        font-size: 1.5vw;
+    }
 }
 
 @media(max-width: 767px) {
@@ -272,7 +260,6 @@ html, body {
         display: flex;
         flex-direction: column-reverse;
     }
-
 }
 
 @media(max-width: 500px) {
@@ -292,7 +279,6 @@ html, body {
     .about-text-content {
         font-size: 4vw;
     }
-
 }
 
 /* ::-webkit-scrollbar {
@@ -339,7 +325,7 @@ html, body {
     margin-right: 15%;
     font-family: 'Goldman';
     font-style: normal;
-    font-size: 3.5vw;
+    font-size: 45px;
     text-align: center;
     border: 5px solid rgba(255, 255, 255, 0.25);
 }
@@ -347,7 +333,7 @@ html, body {
 .marathon-subtitle {
     color: #30394A;
     font-family: 'Gowun Batang', serif;
-    font-size: 4vw;
+    font-size: 52.5px;
     text-align: center;
     padding-right: 6vw;
 }
@@ -356,7 +342,7 @@ html, body {
     font-family: 'Goldman';
     font-style: normal;
     color: white;
-    font-size: 1.4vw;
+    font-size: 22.5px;
     text-align: center;
     padding-top: 5px;
     padding-left: 4vw;
@@ -375,7 +361,7 @@ html, body {
 }
 
 #marathon .marathon-items-list div {
-    height: 8vw;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -383,16 +369,43 @@ html, body {
 }
 
 #marathon .marathon-items-list div img {
-    width: 5vw;
+    width: 70px;
 }
 
 #marathon .marathon-items-list div p {
     width: 100%;
     margin: auto;
     margin-right: 5%;
-    font-size: 1.5vw;
+    font-size: 22.5px;
     text-align: left;
     color: #253C57;
+}
+
+@media(max-width: 1400px) {
+
+    .marathon-header-title {
+        font-size: 3.5vw;
+    }
+    
+    .marathon-subtitle {
+        font-size: 4vw;
+    }
+    
+    .marathon-list-title {
+        font-size: 1.4vw;
+    }
+
+    #marathon .marathon-items-list div {
+        height: 8vw;
+    }
+    
+    #marathon .marathon-items-list div img {
+        width: 5vw;
+    }
+    
+    #marathon .marathon-items-list div p {
+        font-size: 1.5vw;
+    }
 }
 
 @media(max-width: 767px) {
@@ -499,7 +512,7 @@ html, body {
 .about-marathon-title {
     color: #437708;
     font-family: 'Alegreya Sans SC', sans-serif;
-    font-size: 3.5vw;
+    font-size: 50px;
     text-align: center;
     padding-left: 15%;
 }
@@ -513,15 +526,34 @@ html, body {
 }
 
 #about-marathon .about-marathon-items-list div img {
-    width: 4vw;
+    width: 55px;
 }
 
 #about-marathon .about-marathon-items-list div p {
     width: 100%;
     margin: auto;
-    font-size: 1.25vw;
+    font-size: 17.5px;
     text-align: justify;
     color: #253C57;
+}
+
+@media(max-width: 1400px) {
+
+    .about-marathon-title {
+        color: #437708;
+        font-family: 'Alegreya Sans SC', sans-serif;
+        font-size: 3.5vw;
+        text-align: center;
+        padding-left: 15%;
+    }
+    
+    #about-marathon .about-marathon-items-list div img {
+        width: 4vw;
+    }
+    
+    #about-marathon .about-marathon-items-list div p {
+        font-size: 1.25vw;
+    }
 }
 
 @media(max-width: 767px) {
@@ -576,21 +608,6 @@ html, body {
         padding-right: 10px;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* PROGRAM */
 
